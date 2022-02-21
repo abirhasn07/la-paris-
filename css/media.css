@@ -1,0 +1,246 @@
+@media (max-width: 700px) {
+  nav {
+    width: 100%;
+    min-height: 80px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    /* background-color: red; */
+    position: fixed;
+    z-index: 99999;
+    padding: 0 1rem;
+    background-color: var(--grey-light);
+  }
+  .login-section {
+    display: none;
+  }
+  .logo-section {
+    flex-basis: 50%;
+  }
+  .logo-section img {
+    width: 100px;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+  .menu-icon {
+    display: block;
+    flex-basis: 20%;
+  }
+  .menu-icon i {
+    font-size: 1.5rem;
+    color: orangered;
+  }
+  .cart-section {
+    flex-basis: 10%;
+  }
+
+  .cart-section i {
+    display: none;
+    border-right: none;
+  }
+  #cart {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    color: orangered;
+  }
+  .cart-item-number span {
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    color: orangered;
+    font-size: 1.2rem;
+  }
+
+  .cart-btn {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+  .cart-btn a {
+    font-size: 0.8rem;
+  }
+
+  /* nav link  */
+  .nav-item {
+    position: absolute;
+    top: 9vh;
+    z-index: 999;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--grey-light);
+    left: -100%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    height: 100vh;
+    justify-content: start;
+  }
+  .nav-item li a {
+    padding-left: 0.8rem;
+    font-size: 1.5rem;
+    color: #ff4500;
+    padding-top: 1rem;
+  }
+  .nav-item.active {
+    left: 0;
+  }
+
+  /* nav link  */
+
+  .banner {
+    height: 70vh;
+  }
+  .slide-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .slide-info h2 {
+    font-size: 2rem;
+  }
+  .slide-info a {
+    width: 150px;
+  }
+  /* banner section  */
+
+  /* hero section  */
+  .hero {
+    width: 100%;
+    height: 100%;
+    padding-block: 1rem;
+  }
+  .hero-info-container {
+    min-height: 60vh;
+  }
+  .hero-info-container > h2 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    height: 100%;
+    color: var(--black-light);
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .bottom {
+    height: 60vh;
+
+    position: relative;
+    /* flex-basis: 100%; */
+  }
+
+  .hero-info-content {
+    width: 100%;
+    height: 60vh;
+    /* background-color: red; */
+    top: 60%;
+    left: 0;
+  }
+  .hero-title {
+    width: 100%;
+    /* color: rebeccapurple; */
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+  }
+  /* hero section  */
+  /* product section  */
+  .section-title h3 {
+    display: none;
+  }
+  .product-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .mini-screen {
+    display: block;
+  }
+
+  /* brand section  */
+  .brand-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .brand-section img {
+    width: 100px;
+  }
+
+  /* newsletter */
+  .newsletter-title {
+    flex-basis: 90%;
+    text-align: center;
+  }
+  .newsletter-subtitle {
+    flex-basis: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .newsletter-subtitle p {
+    width: 100%;
+  }
+  .form {
+    flex-basis: 90%;
+  }
+  .form #email-input {
+    color: white;
+  }
+
+  /* registration page  */
+  .register {
+    width: 100%;
+    padding: 100px 0;
+
+    height: 100vh;
+  }
+  .register form {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .register form input {
+    flex-basis: 80%;
+    padding: 0.5rem;
+  }
+  /* registration page  */
+
+  /* blog page  */
+  .blog-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-nav > .logo-section {
+    flex-basis: 100%;
+  }
+
+  .blog {
+    padding-top: 80px;
+    width: 100%;
+  }
+  .blog-col {
+    flex-basis: 90%;
+  }
+  /* blog page  */
+  /* cart section  */
+  .small-container {
+    width: 100%;
+    top: 0px;
+  }
+  .total-price {
+    width: 100%;
+  }
+  .checkout {
+    margin-bottom: 1em;
+  }
+  /* cart section  */
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- google font link  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font link  -->
+    <!-- font awesome link  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome link  -->
+    <!-- swiper js link  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- swiper js link  -->
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="../css/swiper.css" />
+
+    <!-- swiper css link  -->
+
+    <!-- custom-css link  -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <!-- custom-css link  -->
+    <title>LaParis</title>
+  </head>
+  <body>
+    <div class="loader">
+      <img src="../images/loader.gif" alt="loader" />
+    </div>
+    <main id="main">
+      <body>
+        <!-- navbar  -->
+        <section id="">
+          <nav>
+            <div class="login-section">
+              <select name="currency" id="money-option">
+                <option value="usd">USD</option>
+                <option value="bdt">BDT</option>
+                <option value="aed">AED</option>
+                <option value="euro">EURO</option>
+              </select>
+              <a href="#"><i class="fas fa-sign-in-alt"></i> Sign in</a>
+              <a href="./register.html">Register</a>
+            </div>
+            <div class="menu-icon">
+              <i class="open-menu fas fa-bars" onclick="menuBtn()"></i>
+
+              <i class="close-menu hide fas fa-times" onclick="menuBtn()"></i>
+            </div>
+
+            <div class="logo-section">
+              <img src="../images/logo.png" alt="la -paris logo" />
+            </div>
+            <div class="cart-section">
+              <div class="cart-item-number">
+                <i class="fas fa-cart-plus" onclick="openCart()" id="cart"> </i>
+                <span id="totalCartItems">0</span>
+              </div>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-search" onclick="showSearchBar()"></i>
+            </div>
+
+            <form class="input-section">
+              <input type="text" placeholder="Search the product..." />
+            </form>
+            <ul class="nav-item">
+              <li><a onclick="menuBtn()" href="./index.html">Home</a></li>
+              <li><a onclick="menuBtn()" href="./shop.html">Shop</a></li>
+              <li><a onclick="menuBtn()" href="./blog.html">Blog</a></li>
+              <li>
+                <a onclick="menuBtn()" href="./register.html ">Join Us</a>
+              </li>
+            </ul>
+
+            <!-- cart items -->
+            <div class="small-container hidden">
+              <div class="cart-bar">
+                <h4>My Cart</h4>
+                <i class="close-icon fas fa-times" onclick="openCart()"></i>
+              </div>
+              <div class="cart-body"></div>
+              <div class="cart-footer"></div>
+              <button class="checkout">Checkout</button>
+            </div>
+
+            <!-- cart items -->
+          </nav>
+        </section>
+
+        <!-- navbar  -->
+        <!-- banner section  -->
+        <section class="banner" id="banner-section">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../images/slide01__85753.jpg" alt="" />
+                <div class="slide-info">
+                  <h2>Buy Beauty Product</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iusto, asperiores?Lorem ipsum dolor sit amet.
+                  </p>
+                  <a
+                    href="
+                "
+                    class="hero-btn"
+                  >
+                    View Category
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/slide02__911422.jpg" alt="" />
+                <div class="slide-info">
+                  <h2>Trending 2022</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iusto, asperiores?Lorem ipsum dolor sit amet.
+                  </p>
+                  <a
+                    href="
+                "
+                    class="hero-btn"
+                  >
+                    View Category
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/slide03__96898.jpg" alt="" />
+
+                <div class="slide-info">
+                  <h2>time to shine</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iusto, asperiores?Lorem ipsum dolor sit amet.
+                  </p>
+                  <a
+                    href="
+                "
+                    class="hero-btn"
+                  >
+                    View Category
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- Swiper JS -->
+        </section>
+        <!-- banner section  -->
+        <!-- hero section  -->
+        <section class="hero">
+          <div class="hero-info top">
+            <div class="hero-info-container">
+              <h2 class="hero-title">The Woman Collection</h2>
+              <p>
+                Mauris at bibendum ex, sit amet ornare quam. Aenean interdum
+                hendrerit lectus sagittis turpis sit amet neque varius.
+              </p>
+              <a href="#" class="hero-btn">View Categories</a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="../images/banner01.jpg" alt="" />
+          </div>
+
+          <!-- second part  -->
+          <div class="hero-info bottom">
+            <img src="../images/banner02.jpg" alt="" />
+            <div class="hero-info-content">
+              <h2 class="hero-title">The Man Collection</h2>
+              <p>
+                Mauris at bibendum ex, sit amet ornare quam. Aenean interdum
+                hendrerit lectus sagittis turpis sit amet neque varius.
+              </p>
+              <a href="#" class="hero-btn">View Categories</a>
+            </div>
+          </div>
+          <div class="hero-img last">
+            <img src="../images/banner03.jpg" alt="" />
+          </div>
+        </section>
+
+        <!-- hero section  -->
+        <!-- woman product -->
+        <section class="new-product">
+          <div class="section-title">
+            <h3>Trending Product 2022</h3>
+          </div>
+          <!-- <div class="categories-btns">
+          <a href="#" class="filter-product-btn">Man</a
+          ><a href="#" class="filter-product-btn">Woman</a
+          ><a href="#" class="filter-product-btn">T Shirt</a>
+        </div> -->
+          <div class="product-container"></div>
+        </section>
+        <!-- woman product -->
+
+        <!-- popular product  -->
+        <section class="popular-product">
+          <h2 class="section-title">MOST POPULAR PRODUCTS</h2>
+
+          <div class="popular-product-container"></div>
+        </section>
+        <!-- popular product  -->
+
+        <!-- second banner section -->
+        <section class="second-banner"></section>
+        <!-- second banner section -->
+        <!-- brand section  -->
+        <section class="brand-section">
+          <img src="../images/brand01.png" alt="" class="brand-logo" />
+          <img src="../images/brand02.png" alt="" class="brand-logo" />
+          <img src="../images/brand03.png" alt="" class="brand-logo" />
+          <img src="../images/brand04.png" alt="" class="brand-logo" />
+          <img src="../images/brand05.png" alt="" class="brand-logo" />
+        </section>
+        <!-- brand section  -->
+
+        <!-- newsletter section  -->
+        <section class="newsletter">
+          <div class="newsletter-title">
+            <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+          </div>
+          <div class="newsletter-subtitle">
+            <p>Get the latest updates on new products and upcoming sales</p>
+          </div>
+          <form action="" method="get" class="form">
+            <input
+              type="text"
+              name=""
+              id="email-input"
+              placeholder="your email address"
+            />
+            <br />
+            <input type="button" value="SUBSCRIBE" id="subscribe-btn" />
+          </form>
+        </section>
+        <!-- newsletter section  -->
+
+        <!-- swiper js link  -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <!-- swiper js link  -->
+        <!-- custom database link  -->
+        <script src="../database/database.js"></script>
+        <!-- custom database link  -->
+        <!-- custom js link  -->
+        <script src="../js/app.js"></script>
+        <!-- custom js link  -->
+      </body>
+    </main>
+  </body>
+</html>

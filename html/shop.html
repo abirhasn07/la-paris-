@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- google font link  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font link  -->
+    <!-- font awesome link  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome link  -->
+
+    <!-- custom-css link  -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <!-- custom-css link  -->
+    <title>LaParis</title>
+
+    <body>
+      <!-- navbar  -->
+
+      <div class="loader">
+        <img src="../images/loader.gif" alt="">
+      </div>
+      
+      <nav>
+        <div class="login-section">
+          <select name="currency" id="money-option">
+            <option value="usd">USD</option>
+            <option value="bdt">BDT</option>
+            <option value="aed">AED</option>
+            <option value="euro">EURO</option>
+          </select>
+          <a href="#"><i class="fas fa-sign-in-alt"></i> Sign in</a>
+          <a href="./register.html">Register</a>
+        </div>
+        <a href="./index.html" class="menu-icon">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+
+        <div class="logo-section">
+          <img src="../images/logo.png" alt="la -paris logo" />
+        </div>
+        <div class="cart-section">
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#" class="search-icon" onclick="showSearchBar()"
+            ><i class="fas fa-search"></i
+          ></a>
+          <a href="./cart.html"><i class="fas fa-cart-plus" id="cart"></i></a>
+        </div>
+
+        <form class="input-section">
+          <input type="text" placeholder="Search the product..." />
+        </form>
+        <ul class="nav-item">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./register.html ">Join Us</a></li>
+        </ul>
+      </nav>
+      <!-- navbar  -->
+      <section class="shop">
+        <h4>HOME /SHOP</h4>
+        <div class="shop-btn">
+          <li class="product-btn active" data-filter="woman">woman</li>
+          <li class="product-btn" data-filter="man">man</li>
+          <li class="product-btn" data-filter="t-shirt"
+            >Summer Fashion</=
+          >
+          <li class="product-btn" data-filter="printed-shirt"
+            >Hot Deal</=
+          >
+        </div>
+        <div class="shop-product-container" ></div>
+      </section>
+
+      <!-- newsletter section  -->
+      <section class="newsletter">
+        <div class="newsletter-title">
+          <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+        </div>
+        <div class="newsletter-subtitle">
+          <p>Get the latest updates on new products and upcoming sales</p>
+        </div>
+        <form action="" method="get" class="form">
+          <input
+            type="text"
+            name=""
+            id="email-input"
+            placeholder="your email address"
+          />
+          <br />
+          <input type="button" value="SUBSCRIBE" id="subscribe-btn" />
+        </form>
+      </section>
+      <!-- newsletter section  -->
+
+      <!-- swiper js link  -->
+      <script src="../js/app.js"></script>
+      <script src="../database/database.js"></script>
+      <script src="../js/shop.js"></script>
+    </body>
+  </head>
+</html>
