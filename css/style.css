@@ -109,19 +109,6 @@ nav {
   color: orangered;
   font-size: 1.2rem;
 }
-/* .cart-section a {
-  padding: 0 0.5rem;
-  border-right: 1px solid var(--black-light);
-  opacity: 0.8;
-}
-.cart-section li {
-  color: orangered;
-  margin-left: 2px;
-  cursor: pointer;
-}
-.cart-section i {
-  color: orangered;
-} */
 
 .input-section {
   flex-basis: 90%;
@@ -784,7 +771,7 @@ i {
 .shop h4 {
   text-align: center;
 }
-.shop-btn {
+.fiter-btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -792,20 +779,24 @@ i {
   gap: 1rem;
   margin-top: 1rem;
 }
-.shop-btn li {
-  text-transform: capitalize;
-  background-color: var(--grey-light);
-  padding: 0.4rem;
-  color: orangered;
-  border-radius: 0.2rem;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
+
+.fiter-btn-container li .active {
+  display: none !important;
 }
-.shop-btn li .active {
+.gallary-btn {
+  background-color: var(--grey-light);
+  color: orangered;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.gallary-btn.active {
   background-color: orangered;
-  color: #ffffff;
+  color: white;
 }
 
 .shop-product-container {
@@ -814,6 +805,7 @@ i {
   gap: 1rem;
   padding: 2rem 0;
 }
+
 /* shop page  */
 /* single product page  */
 

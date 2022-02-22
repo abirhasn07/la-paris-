@@ -8,8 +8,8 @@ function popularProductDisplay() {
 
         shopContainer.innerHTML+=`
       
-      <div class="product-card" data-item="${item.categories}">
-          <img src="${item.img}" alt="product-name" />
+      <div class="product-card active" data-id=${item.categories}>
+          <img src="${item.img}" loading="lazy" decoding="async" alt="product-name" />
           <div class="product-info">
             <p class="product-name">${item.name}</p>
             <span class="price">$${item.price}</span>
@@ -33,6 +33,7 @@ function popularProductDisplay() {
       
       
       `
+   console.log(item.categories);
     })
 
     
@@ -42,20 +43,47 @@ function popularProductDisplay() {
 
   
 
-  let productBtn=document.querySelectorAll(".product-btn")
-  let card=document.querySelectorAll(".product-card")
+//   let productBtn=document.querySelectorAll(".product-btn")
+//   let card=document.querySelectorAll(".product-card")
 
 
-  for (let i=0; i<productBtn.length;i++ ){
-      productBtn[i].addEventListener("click",function(){
-          for(let j=0; j<productBtn.length;j++){
-              productBtn[i].classList.toggle("active")
-          }
+//   for (let i=0; i<productBtn.length;i++ ){
+//       productBtn[i].addEventListener("click",function(){
+//           for(let j=0; j<productBtn.length;j++){
+//               productBtn[i].classList.toggle("active")
+//           }
 
-      })
-  }
+//       })
+//   }
 
 
-const singleID=()=>{
-  console.log();
+// const singleID=()=>{
+//   console.log();
+// }
+
+const filterBtn=document.querySelector('.fiter-btn-container').children;
+
+const productContainer=document.querySelector('.shop-product-container').children;
+
+for (let i = 0; i < filterBtn.length; i++) {
+  filterBtn[i].addEventListener("click",function () {
+    for (let j = 0; j < filterBtn.length; j++) {
+      filterBtn[j].classList.remove("active")
+      
+    }
+    this.classList.add("active")
+    const target=this.getAttribute("data-id")
+    // console.log(target);
+    for (let k = 0; k < productContainer.length; k++) {
+   productContainer[k].style.display="none"   ;
+   if (target==productContainer[k].getAttribute("data-id")) {
+    productContainer[k].style.display="block";  
+    console.log("clicked");
+   }
+   if (target=="all") {
+    productContainer[k].style.display="block"   
+   }
+    }
+  })
+  
 }

@@ -243,4 +243,18 @@
     margin-bottom: 1em;
   }
   /* cart section  */
+  /* shop page  */
+  .shop {
+    padding-top: 15vh;
+  }
+  .shop h4 {
+    font-size: 1.3rem;
+  }
+  .fiter-btn-container {
+    flex-wrap: wrap;
+  }
+  .fiter-btn-container li {
+    font-size: 0.8rem;
+  }
+  /* shop page  */
 }

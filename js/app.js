@@ -46,7 +46,9 @@ function menProduct() {
     productContainer.innerHTML += `
       
       <div class="product-card">
-          <img src="${pd.img}" alt="product-name" loading="lazy" />
+          <img src="${pd.img}" 
+          loading="lazy" decoding="async" 
+          alt="product-name"  />
           <div class="product-info">
             <p class="product-name">${pd.name}</p>
             <span class="price">$${pd.price}</span>
